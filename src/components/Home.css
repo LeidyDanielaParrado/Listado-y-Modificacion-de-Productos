@@ -1,0 +1,17 @@
+.team-container {
+    display: flex;
+  }
+  
+  .member {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .member img {
+    max-width: 150px;
+    border-radius: 50%;
+  }
+  
