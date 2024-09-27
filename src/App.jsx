@@ -1,14 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import Home from './components/Home';
+import CardList from './pages/CardList';
+import AddCard from './components/AddCard';
+import Navbar from './components/Navbar';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [screen, setScreen] = useState('home');
+  const [cards, setCards] = useState([]);
+
+  const handleAddCard = (newCard) => {
+    setCards([newCard, ...cards]);
+  };
 
   return (
-    // aqui comienza el codigo 
-  )
-}
+    <div className="App">
+      <Navbar setScreen={setScreen} />
 
-export default App
+      <div className="screen">
+        {screen === 'home' && <Home />}
+        {screen === 'cards' && <CardList cards={cards} />}
+        {screen === 'add' && <AddCard onAdd={handleAddCard} />}
+      </div>
+    </div>
+  );
+};
+
+export default App;
+
