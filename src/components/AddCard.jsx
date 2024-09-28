@@ -12,7 +12,7 @@ const AddCard = ({ onAdd }) => {
       name: pokemonName,
       sprites: { front_default: imageUrl },
       height: height,
-      weight: weight
+      weight: weight,
     };
 
     onAdd(newPokemon);  // Agrega el nuevo Pokémon a la lista
@@ -23,32 +23,35 @@ const AddCard = ({ onAdd }) => {
   };
 
   return (
-    <div className="add-card">
-      <input
-        type="text"
-        placeholder="Nombre del Pokémon"
-        value={pokemonName}
-        onChange={(e) => setPokemonName(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="URL de la imagen"
-        value={imageUrl}
-        onChange={(e) => setImageUrl(e.target.value)}
-      />
-      <input
-        type="number"
-        placeholder="Altura"
-        value={height}
-        onChange={(e) => setHeight(e.target.value)}
-      />
-      <input
-        type="number"
-        placeholder="Peso"
-        value={weight}
-        onChange={(e) => setWeight(e.target.value)}
-      />
-      <button onClick={handleAdd}>Agregar Pokémon</button>
+    <div className="add-card-container">
+      <fieldset className="add-card">
+        <legend>Agregar Nuevo Pokémon</legend>
+        <input
+          type="text"
+          placeholder="Nombre del Pokémon"
+          value={pokemonName}
+          onChange={(e) => setPokemonName(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="URL de la imagen"
+          value={imageUrl}
+          onChange={(e) => setImageUrl(e.target.value)}
+        />
+        <input
+          type="number"
+          placeholder="Altura"
+          value={height}
+          onChange={(e) => setHeight(e.target.value)}
+        />
+        <input
+          type="number"
+          placeholder="Peso"
+          value={weight}
+          onChange={(e) => setWeight(e.target.value)}
+        />
+        <button onClick={handleAdd}>Agregar Pokémon</button>
+      </fieldset>
     </div>
   );
 };
