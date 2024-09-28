@@ -16,15 +16,16 @@
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(5, 37, 195, 0.732);
     width: 250px;
     box-sizing: border-box;
   }
   
   .member img {
-    max-width: 150px;
+    max-width: 200px;
     border-radius: 50%;
     margin-bottom: 1rem;
+    color: #040c15;
   }
 
   .member h3 {

@@ -15,7 +15,7 @@ const AddCard = ({ onAdd }) => {
       weight: weight,
     };
 
-    onAdd(newPokemon);  // Agrega el nuevo Pokémon a la lista
+    onAdd(newPokemon);  
     setPokemonName('');
     setImageUrl('');
     setHeight('');
