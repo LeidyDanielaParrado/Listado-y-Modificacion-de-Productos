@@ -5,9 +5,10 @@
 	justify-content: center;
 	align-items: center;
 	height:100vh; 
-  width: 100vw; 
+  width: 100%; 
   background-color: #242424;
 	padding: 1rem;
+  overflow-x: hidden;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -20,9 +21,10 @@
 	padding: 2rem;
 	width: 100%;
 	max-width: 400px; 
-	background-color: #fff;
-	box-shadow: 4px 4px 4px 4px rgba(69, 156, 255, 0.376);
+	background-color: #3d3d3d;
+  box-shadow: 0 9px 8px rgba(0, 0, 0, 0.696);
 	border-radius: 10px;
+  border: none;
 	font-family: "Roboto", sans-serif;
 
   position: relative;
@@ -31,16 +33,14 @@
 .add-card legend {
 	font-size: 1.5rem;
 	font-weight: 700;
-	color: #333333;
+	color: #ffffff;
 	text-align: center; 
   padding: 0.4rem;
   width: auto;
-  background-color: #fff;
   display: block;
   box-sizing: border-box;
   position: relative;
   border-radius: 15px;
-  box-shadow: 4px 4px 4px 0px rgba(17, 0, 255, 0.431);
 }
 
 .add-card input {
@@ -48,24 +48,24 @@
 	width: 95%;
 	border-radius: 8px;
 	border: 1px solid #333;
-  background-color: #ffffff;
-  color: #333;
+  background-color: #242424;
+  color: #ffffff;
 	font-size: 1rem;
 	transition: all 0.3s ease;
 }
 
 .add-card input:focus {
-	border-color: #007bff9f;
-	box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+	border-color: #ff0000a7;
+	box-shadow: 0 0 8px rgba(255, 0, 0, 0.831);
 }
 
 .add-card button {
-  font-weight: 500;
+  font-weight: 700;
 	padding: 0.75rem;
-	background-color: #007bff;
-	color: white;
+	background-color: #8f1212;
+	color: rgb(255, 255, 255);
 	border: none;
-	border-radius: 8px;
+	border-radius: 10px;
 	font-size: 1rem;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
@@ -73,12 +73,12 @@
 }
 
 .add-card button:hover {
-	background-color: #0056b3;
+	background-color: #fb1a1a;
 }
 
 .add-card button:focus {
 	outline: none;
-	box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+	box-shadow: 0 0 8px rgba(255, 0, 0, 0.749);
 }
 
 
