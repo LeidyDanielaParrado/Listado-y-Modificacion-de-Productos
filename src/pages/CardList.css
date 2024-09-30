@@ -4,7 +4,7 @@
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
-    margin-top: 120px;
+    margin-top: 70px;
     
   }
   
@@ -14,7 +14,7 @@
     width: 200px;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.696);
   }
   
   .card-image {

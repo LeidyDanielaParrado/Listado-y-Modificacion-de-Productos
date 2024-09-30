@@ -3,82 +3,111 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	
-	height: 60px;
-	background-color: #3D3D3D;
+	width: 100%;
+	height: 70px;
+	background-color: #000000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	z-index: 1000;
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-	margin: 30px 25px;
-	padding: 10px;
+	box-shadow: 0px 4px 8px rgba(163, 18, 18, 0.1);
+	padding: 0;
 	border-radius: 15px;
-  }
-  
+  position: absolute;
+}
 
-  
-  .menu-icon {
+.menu-icon {
 	display: none; /* Oculto por defecto */
 	font-size: 28px;
 	cursor: pointer;
 	color: white;
-  }
-  
-  .nav-menu {
+}
+
+.nav-menu {
 	display: flex;
 	list-style: none;
 	text-align: center;
 	gap: 10px;
-  }
-  
- 
-  .navbar button {
+}
+
+.navbar button {
 	padding: 10px 20px;
 	font-size: 16px;
 	cursor: pointer;
-	border: none;
 	background-color: transparent;
 	color: white;
-  }
-  
-  .navbar button:hover {
-	color: #a6a6a6;
+  border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	border-top: none;
+	border-bottom: none;
+}
+
+.navbar button:hover {
+	color: #c4c3c3;
 	border-radius: 7px;
-  }
-  
-  /* Estilos Responsive */
-  @media screen and (max-width: 768px) {
+}
+
+.navbar button.selected {
+  color: #ffffff;
+  border-radius: 7px;
+  background-color: #fa00003f;
+}
+
+.logo{
+  position: absolute;
+  top: 8px;
+  right: 30px;
+  width: 160px;
+  height: auto;
+}
+
+/* Estilos Responsive */
+@media screen and (max-width: 768px) {
 	.menu-icon {
-	  display: block; /* Muestra el icono de menú en pantallas pequeñas */
-	  margin-left: -190px;
-	 
+		display: block;
+		font-size: 28px;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+		cursor: pointer;
+		color: white;
 	}
-  
+
+	.logo {
+		left: 55px;
+    top: 4px;
+	}
+
 	.nav-menu {
-	  display: flex;
-	  flex-direction: column;
-	  position: absolute;
-	  align-items: center;
-	  top: 40px;
-	  left: -120%;
-	  width: 100%;
-	  background-color: #3D3D3D;
-	  transition: all 0.5s ease;
-	  padding-left: -0px;
-	  border-radius: 15px;
-	  padding-bottom: 30px;
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		align-items: center;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		background-color: #424242;
+		transition: all 0.5s ease;
+		padding: 10px 0;
+		border-radius: 15px;
 	}
 
-
-  
-	.nav-menu.active {
-	  left: 0; /* Muestra el menú cuando está activo */
-	  
-	}
-  
-	.nav-item {
-	  margin: 20px 0px;
-	}
+  .navbar button{
+    border: none;
   }
-  
+
+	.nav-menu.active {
+		display: flex;
+	}
+
+	.nav-item {
+		margin: 5px 0px;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	.navbar {
+		justify-content: space-between;
+	}
+}
