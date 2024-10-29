@@ -32,7 +32,7 @@ const Navbar = ({ setScreen }) => {
             <button onClick={() => handleButtonClick('add')}className={selectedButton==='add'? 'selected' : ''}>Agregar Pokémon</button>
           </li>
         </ul>
-        <img src="/src/images/Pokemon-Logo.png" alt="Logo" className="logo" /> 
+        <img src="./public/Pokemon-Logo.png" alt="Logo" className="logo" /> 
       </div>
     </nav>
   );
